@@ -23,6 +23,5 @@
     "number-to-words": "^1.2.4",
     "pretty-ms": "^7.0.1",
     "txtgen": "^3.0.2",
-    "dotenv": "^16.0.1"
   }
 }
