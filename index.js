@@ -11,7 +11,6 @@ const {
 // const Config = require("./config.json");
 const Firebase = require("./firebase.js");
 const { Player } = require("discord-player");
-const app = require("express")();
 
 const client = new Client({
   intents: [
@@ -123,8 +122,3 @@ for (const file of modalFiles) {
 }
 
 client.login(client.C.TOKEN);
-
-app.get("/", (req, res) => res.send("<h1>hello there - AlienBot server</h1>"));
-
-const port = 37363;
-app.listen(port, () => console.log(`AlienBot server running on port ${port}`));
