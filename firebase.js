@@ -1,6 +1,7 @@
+require("dotenv").config()
 const firebase = require("firebase-admin/app");
 const firestore = require("firebase-admin/firestore");
-const Config = require("./config.json");
+const Config = process.env;
 
 const app = firebase.initializeApp({
   credential: firebase.cert(Config.FIREBASE_CONFIG),
